@@ -3,13 +3,13 @@ import mysql.connector
 
 #Conexión
 print ("Conectando a la base de datos...")
-cnx = mysql.connector.connect(user='rociobc', password='1234', host='127.0.0.1', database='codigoIoT')
+cnx = mysql.connector.connect(user='rociolan', password='1234', host='127.0.0.1', database='codigoIoT')
 
 #cursor
 cursor = cnx.cursor()
 
 #Query
-query = ("SELECT id,nombre,temp,humedad FROM clima WHERE nombre='Laura Balandran';")
+query = ("SELECT * FROM rfid where id=10';")
 
 #Ejecución del cursor
 cursor.execute(query)
